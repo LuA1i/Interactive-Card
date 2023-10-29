@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces&family=Kumbh+Sans&family=Manrope:wght@400;600;800&family=Open+Sans:wght@300;400&family=Poppins:wght@200;300;400;600;700&family=Red+Hat+Display:wght@900&family=Roboto:wght@700&family=Space+Grotesk&family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Interactive card details form</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="left_section">
+          <div class="cards">
+            <div class="front_card">
+              <img
+                src="../images/card-logo.svg"
+                alt="card-logo"
+                class="card_logo"
+              />
+              <div class="card_container">
+                <img src="../images/bg-card-front.png" alt="front-card" />
+                <h1 id="number">0000 0000 0000 0000</h1>
+                <div class="card_info">
+                  <span id="name">JANE APPLESEED</span>
+                  <span id="date">
+                    <span id="card_month">00</span>
+                    /
+                    <span id="card_year">00</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="back_card">
+              <img src="../images/bg-card-back.png" alt="back-card" />
+              <span class="cvc">000</span>
+            </div>
+          </div>
+        </div>
+        <div class="right_section ">
+          <div class="input_form ">
+          <form class=>
+            <!-- Input Name And Card Number -->
+            <p class="card_name">CARD HOLDERNAME</p>
+            <input  class="name" type="text" placeholder="e.g Luqman Ali" />
+                            <!-- Number -->
+            <p class="card_number">CARD NUMBER</p>
+            <input max="16" class="number" type="number" placeholder="e.g 4123 4123 8376 8291" />
+
+            <!-- Input year and CVC -->
+            <div class="cvc_expdate">
+              <p>EXP.DATE (MM)(YY)</p>
+              <!-- Months/Year -->
+              <input class="month" type="number" placeholder="MM" /><input
+                class="year"
+                type="number"
+                placeholder="YY"
+              />
+              <!-- Cvc Number -->
+              <p class="cvc_text">CVC</p>
+              <input class="cvc_num" type="number" placeholder="e.g 620" />
+            </div>
+            <div class="cvc_number"></div>
+            <button class="btn_submit" type="submit">Confirm</button>
+          </form>
+        </div>
+          <!-- Hidden Message pop up -->
+          <div class="completed hidden">
+          <div class="thanks_msg ">
+            <img src="../images/icon-complete.svg" alt="Completed" />
+            <h1>THANK YOU!</h1>
+            <p>We've added your card details</p>
+            <button class="continue">Continue</button>
+          </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Completed state start -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
